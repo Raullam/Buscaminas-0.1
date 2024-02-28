@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="25" height="25"
+     viewBox="-50 -50 100 100">
+
+    <defs>
+        <radialGradient id="gradiente" cx="0.35" cy="0.35">
+            <stop stop-color="#ffc600" offset="0%"/>
+            <stop stop-color="#ffc600" offset="60%"/>
+            <stop stop-color="#f39700" offset="100%"/>
+        </radialGradient>
+        <radialGradient id="gradiente1" cx="0.35" cy="0.35">
+            <stop stop-color="#fc0" offset="0%"/>
+            <stop stop-color="#e80" offset="100%"/>
+        </radialGradient>
+        <linearGradient id="gradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop stop-color="#ff0" offset="0%"/>
+            <stop stop-color="#fa0" offset="100%"/>
+        </linearGradient>
+        <radialGradient id="gradiente3">
+            <stop stop-color="#000" offset="0%"/>
+            <stop stop-color="#000" offset="85%"/>
+            <stop stop-color="#fff" offset="100%"/>
+        </radialGradient>
+        <mask id="mask">
+            <circle r="35" fill="url(#gradiente3)"/>
+        </mask>
+    </defs>
+
+    <circle r="45" fill="url(#gradiente)" stroke="#c70"/>
+    <circle r="35" fill="url(#gradiente1)" stroke="#d70"/>
+    <circle r="35" fill="#c50" mask="url(#mask)"/>
+    <g transform="translate(4 -2)" fill="url(#gradiente2)" stroke="#d60">
+        <path d="M -14 -20 L 6 -19 L 15 -3 L 1 6 L 0 10 L -10 10 L -10 3 L 2 -4 L -2 -10 L -8 -10 L -13 -3 L -22 -11 Z M -11 13 L 2 14 L 1 23 L -11 22 Z"/>
+    </g>
+</svg>

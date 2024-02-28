@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="25" height="25"
+     viewBox="-25 -25 50 50">
+
+    <g transform="scale(1.2)">
+        <path d="M -10 -5 a 1 1 0 0 1 20 0 c 0 8 -8 9 -8 18 a 1 1 0 0 1 -4 0 c 0 -9 -8 -10 -8 -18 m 6 0 a 1 1 0 0 0 8 0 a 1 1 0 0 0 -8 0" fill="#f50"/>
+        <path d="M 0 -1 c 8 3 8 -11 0 -8 a 1 1 0 0 1 0 8 m 0 -14 a 1 1 0 0 0 0 20 c -10 -2 -10 -18 0 -20" fill="gold" transform="rotate(30 0 -5)"/>
+        <path d="M -10 -5 a 1 1 0 0 1 20 0 c 0 8 -8 9 -8 18 a 1 1 0 0 1 -4 0 c 0 -9 -8 -10 -8 -18 m 6 0 a 1 1 0 0 0 8 0 a 1 1 0 0 0 -8 0" fill="none" stroke="black" stroke-width="1.1"/>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="25" height="25"
+     viewBox="-25 -25 50 50">
+
+    <g transform="scale(1.8)">
+        <path d="M 0 10 l -10 -15 l 5 -5 h 10 l 5 5 z" fill="cyan" stroke="black"/>
+        <path d="M -10 -5 h 8 l -3 -5 z" fill="#80FFDB"/>
+        <path d="M 0 10 l -10 -15 h 6 z" fill="#56CFE1"/>
+        <path d="M -2 -5 l -3 -5 h 10 l -3 5 z4" fill="#64DFDF"/>
+        <path d="M 0 10 l -4 -15 h 8 z" fill="#4EA8DE"/>
+        <path d="M 10 -5 h -8 l 3 -5 z" fill="#5390D9"/>
+        <path d="M 0 10 l 10 -15 h -6 z" fill="#5E60CE"/>
+    </g>
+</svg>

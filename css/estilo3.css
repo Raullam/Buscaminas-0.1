@@ -1,0 +1,28 @@
+@import "estilos.css";
+:root{
+    --color-fons1: #6EED94FF;
+    --color-fons2: #C6E765FF;
+    --color-boto1: #007F5F;
+    --color-boto2: #FFFF3F;
+
+    --color-reflexe-taulell: #DDDF00;
+    --color-ombra-taulell: #2B9348;
+    --color-taulell: #80B918;
+
+    --ombra-text: #007F5F;
+
+    --color-estado: #EEEF20;
+    --color-text-generar: #000;
+    --color-ombra-generar: #0b765b;
+
+    --color-fons-mina: #e4ff1a;
+
+    --vecinas1: #fe63ac;
+    --vecinas2: #ff99e9;
+    --vecinas3: #00d4ff;
+    --vecinas4: #0f3;
+    --vecinas5: #cf0;
+    --vecinas6: #fc0;
+    --vecinas7: #f30;
+    --vecinas8: #600;
+}

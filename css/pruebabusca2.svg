@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="25" height="25"
+     viewBox="-50 -50 1000 500">
+
+    <!-- Definición de gradientes y estilos -->
+    <defs>
+        <radialGradient id="gradiente" cx="0.45" cy="0.45">
+            <stop stop-color="gray" offset="0%"/>
+            <stop stop-color="gray" offset="30%"/>
+            <stop stop-color="black" offset="100%"/>
+        </radialGradient>
+        <radialGradient id="gradiente1">
+            <stop stop-color="gray" offset="0%"/>
+            <stop stop-color="black" offset="100%"/>
+        </radialGradient>
+        <linearGradient id="gradiente2">
+            <stop stop-color="black" offset="0%"/>
+            <stop stop-color="gray" offset="50%"/>
+            <stop stop-color="black" offset="100%"/>
+        </linearGradient>
+        <!-- Definición del grupo a rotar -->
+        <g id="grup" fill="none" stroke="black" stroke-width="0.5">
+            <circle r="30" fill="url(#gradiente)"/>
+            <use xlink:href="#a"/>
+            <use xlink:href="#a" transform="rotate(45)"/>
+            <use xlink:href="#a" transform="rotate(90)"/>
+            <use xlink:href="#a" transform="rotate(135)"/>
+            <use xlink:href="#a" transform="rotate(180)"/>
+            <use xlink:href="#a" transform="rotate(225)"/>
+            <use xlink:href="#a" transform="rotate(270)"/>
+            <use xlink:href="#a" transform="rotate(315)"/>
+            <circle r="6" fill="url(#gradiente1)"/>
+        </g>
+    </defs>
+
+    <!-- Inclusión del grupo con animación de rotación -->
+    <g id="rotatable" transform="translate(100 100)">
+        <use xlink:href="#grup"></use>
+    </g>
+
+    <!-- Inclusión de múltiples instancias del grupo -->
+    <use xlink:href="#rotatable" transform="translate(180 320)" ></use>
+    <use xlink:href="#rotatable" transform="translate(150 100)" ></use>
+    <use xlink:href="#rotatable" transform="translate(800 100)" ></use>
+    <use xlink:href="#rotatable" transform="translate(25 400)" ></use>
+    <use xlink:href="#rotatable" transform="translate(600 400)" ></use>
+    <use xlink:href="#rotatable" transform="translate(700 250)" ></use>
+    <use xlink:href="#rotatable" transform="translate(900 400)" ></use>
+
+    <!-- Definición de la animación de rotación -->
+    <style>
+        #rotatable {
+        transform-origin: center; /* Define el punto de origen de la rotación en el centro del SVG */
+        animation: rotateAnimation 3s linear infinite; /* Animación de rotación */
+        }
+
+        @keyframes rotateAnimation {
+        from {
+        transform: rotate(180deg); /* Rotación inicial, 0 grados */
+        }
+        to {
+        transform: rotate(0deg); /* Rotación final, 360 grados (una vuelta completa) */
+        }
+        }
+    </style>
+</svg>

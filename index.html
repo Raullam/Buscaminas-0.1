@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🕹️ BuScAmInAs 🕹️</title>
+    <link id="estilo" href="css/estilo1.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="Imatges/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+</head>
+<body>
+<div>
+    <h1 class="primerh1">B u s c a m i n a s</h1>
+    <div id="temporizador">Tiempo: <span class="tiempo">0</span> segundos</div> <!-- Temporizador -->
+    <div id="tablero"></div>
+    <audio id="bubbleSound" src="loops/bubble.mp3" preload="auto"></audio>
+    <audio id="explosionAudio" src="loops/explosion.mp3" preload="auto"></audio>
+    <video id="video" onended="videoEnded()" src="loops/explosion-16640.webm" preload="auto"></video>
+    <div id="estado"><div>Nº de minas restante: <span id="numMinasRestantes"></span></div></div>
+    <br>
+    <div id="divgenerar">
+        <label for="minas">M i n a s </label>
+        <input id="minas" type="number" value="30" min="1"/>
+        <br>
+        <label for="columnas">C o l u m n a s</label>
+        <input id="columnas" type="number" value="12" min="5" max="45"/>
+        <br>
+        <label for="filas"> F i l a s </label>
+        <input id="filas" type="number" value="12" min="3" max="30"/>
+        <br>
+        <button id="generar" onclick="principal();">Generar / Reiniciar</button>
+        <br>
+        <button id="iconos0" onclick="iconos0();"><img src="css/mina.svg" alt="Icono de mina0"></button>
+        <button id="iconos1" onclick="iconos1();"><img src="css/mina1.svg" alt="Icono de mina1"></button>
+        <button id="iconos2" onclick="iconos2();"><img src="css/mina2.svg" alt="Icono de mina2"></button>
+        <button id="iconos3" onclick="iconos3();"><img src="css/mina3.svg" alt="Icono de mina3"></button>
+        <br>
+        <br>
+        <button id="estilo0" onclick="estilo0();">Clasic</button>
+        <button id="estilo1" onclick="estilo1();">Estilo 1</button>
+        <button id="estilo2" onclick="estilo2();">Estilo 2</button>
+        <br>
+    </div>
+    <div id="Ganar">
+        <div class="ganaste">
+            <h1> GANASTEEE!</h1>
+
+           <img class="imgwin" src="Imatges/winner-on-podium-with-trophy-svgrepo-com.svg">
+           <div class="temporizador" style="font-weight: bold;">Ganaste en <span class="tiempo">0</span> segundos </div>
+
+           <button class="botonvictoria" onclick="botonganar()">Volver a jugar</button>
+        </div>
+    </div>
+</div>
+<div id="gameOver">
+    <h1 class="h1buscaminas2">Game Over</h1>
+    <div class="temporizador" style="font-weight: bold;">Moriste en <span class="tiempo">0</span> segundos </div>
+</div>
+<script src="js/funciones.js"></script>
+<img class="imatge-fonss" src="css/pruebabusca3.svg" alt="Fondo con transparencia">
+<img class="imatge-fonss" src="/css/pruebaba.svg" alt="Fondo con transparencia">
+<img class="imatge-fonss" src="/css/fondosvg.svg" alt="Fondo con transparencia">
+<img class="imatge-fonss" src="/css/fondosvg2.svg" alt="Fondo con transparencia">
+</body>
+</html>
